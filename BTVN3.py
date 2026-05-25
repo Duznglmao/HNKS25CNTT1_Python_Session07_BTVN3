@@ -52,7 +52,7 @@ while True:
             employees_raw = raw_data.split("|")
             for emp in employees_raw:
                 parts = emp.split(";")
-                if len(parts) < 4:
+                if len(parts) != 4:
                     continue
 
                 emp_id = parts[0].strip().upper()
